@@ -1,0 +1,49 @@
+.collapse-item {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 300px;
+    .cell {
+        box-sizing: border-box;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &.disabled {
+            cursor: not-allowed;
+        }
+        .title {
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .triangle {
+            width: 10px;
+            height: 10px;
+            border: 2px solid #ccc;
+            border-top: none;
+            border-left: none;
+            transition: transform linear .3s;
+            &.up {
+                transform: rotate(225deg);
+            }
+            &.down {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .bottom {
+        padding: 10px 0;
+        color: #ccc;
+        transition: all linear .3s;
+        &.open {
+            height: auto;
+        }
+        &.close {
+            height: 0;
+            display: none;
+        }
+    }
+}
