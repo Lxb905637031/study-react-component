@@ -1,3 +1,8 @@
+import AnthonyCatacoliLongWeekend from './assets/source/AnthonyCatacoliLongWeekend.mp3'
+import CodyMartinLoavesFishBackgroundVocals from './assets/source/CodyMartinLoavesFishBackgroundVocals.mp3'
+import MidnightDaydreamSparkleSugar from './assets/source/MidnightDaydreamSparkleSugar.mp3'
+import WayfairBaldur from './assets/source/WayfairBaldur.mp3'
+
 // import { useState } from 'react'
 
 import {
@@ -5,6 +10,7 @@ import {
   // Transfer
   // Collapse
   // Calendar
+  Audio
 } from './components'
 
 function App() {
@@ -81,6 +87,25 @@ function App() {
   //   }
   // ]
 
+  const songList = [
+    {
+      name: 'AnthonyCatacoliLongWeekend',
+      songSrc: AnthonyCatacoliLongWeekend
+    },
+    {
+      name: 'CodyMartinLoavesFishBackgroundVocals',
+      songSrc: CodyMartinLoavesFishBackgroundVocals
+    },
+    {
+      name: 'MidnightDaydreamSparkleSugar',
+      songSrc: MidnightDaydreamSparkleSugar
+    },
+    {
+      name: 'WayfairBaldur',
+      songSrc: WayfairBaldur
+    }
+  ]
+
   return (
     <div 
       className="App" 
@@ -100,6 +125,9 @@ function App() {
         active={['1', '4']}
       /> */}
       {/* <Calendar /> */}
+      <Audio
+        songs={ songList }
+      />
     </div>
   )
 }
