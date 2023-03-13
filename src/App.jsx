@@ -10,7 +10,6 @@ import {
   // Transfer
   // Collapse
   // Calendar
-  // Audio
 } from './components'
 
 function App() {
@@ -125,9 +124,6 @@ function App() {
         active={['1', '4']}
       /> */}
       {/* <Calendar /> */}
-      {/* <Audio
-        songs={ songList }
-      /> */}
     </div>
   )
 }
