@@ -1,0 +1,29 @@
+@keyframes sweep {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    transition: opacity 300ms;
+    opacity: 1;
+
+    .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: sweep linear infinite 3s;
+
+        .sweep {
+            height: 100%;
+            transform-origin: top right;
+        }
+    }
+}

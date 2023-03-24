@@ -10,6 +10,7 @@ import {
   // Transfer
   // Collapse
   // Calendar
+  Skeleton
 } from './components'
 
 function App() {
@@ -124,6 +125,9 @@ function App() {
         active={['1', '4']}
       /> */}
       {/* <Calendar /> */}
+      <Skeleton>
+        <img src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2Fca436192-5a8d-468d-aebc-17635fbbe8aa%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1682228599&t=80e8366e89a5ac9f3f972fd7ae7398c1' />
+      </Skeleton>
     </div>
   )
 }
